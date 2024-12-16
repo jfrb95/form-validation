@@ -16,8 +16,23 @@ form {
 input {
     appearance: none;
     border: solid black 1px;
+    height: 1.5em;
 }
 
-input:invalid {
+input:focus {
+    appearance: none;
+    border: solid black 1px;
+    height: 1.5em;
+}
+
+input:user-invalid {
     border: solid red 1px;
+}
+
+button.submit {
+
+}
+
+.validation-feedback {
+
 }

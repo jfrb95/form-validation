@@ -6,26 +6,38 @@
     <title>Form Validation</title>
 </head>
 <body>
-    <form action="" method="post" novalidate>
+    <form action="" method="get" novalidate>
         <div class="input-wrapper">
             <label for="email">Email:</label>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
+            <div class="validation-feedback" style="display: none"></div>
         </div>
 
         <div class="input-wrapper">
             <label for="country">Country:</label>
-            <input type="text" id="country">
+            <input type="text" id="country" required>
+            <div class="validation-feedback" style="display: none"></div>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="zip-code">Zip Code:</label>
+            <input type="text" id="zip-code" required>
+            <div class="validation-feedback" style="display: none"></div>
         </div>
 
         <div class="input-wrapper">
             <label for="password">Password:</label>
-            <input type="password" id="password">
+            <input type="password" id="password" required>
+            <div class="validation-feedback" style="display: none"></div>
         </div>
 
         <div class="input-wrapper">
             <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password">
+            <input type="password" id="confirm-password" required>
+            <div class="validation-feedback" style="display: none"></div>
         </div>
+
+        <button class="submit">Submit</button>
     </form>
 </body>
 </html>
