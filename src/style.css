@@ -29,6 +29,10 @@ input:user-invalid {
     border: solid red 1px;
 }
 
+input:valid {
+    border: solid green 1px;
+}
+
 button.submit {
 
 }
